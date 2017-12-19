@@ -12,6 +12,7 @@ import com.trevorbernard.disruptor.examples.ValueEvent;
 public class Simple {
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
+        ;
         ExecutorService exec = Executors.newCachedThreadPool();
         // Preallocate RingBuffer with 1024 ValueEvents
         Disruptor<ValueEvent> disruptor = new Disruptor<ValueEvent>(ValueEvent.EVENT_FACTORY, 1024, exec);
