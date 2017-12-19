@@ -21,6 +21,7 @@ public class Simple {
             public void onEvent(final ValueEvent event, final long sequence, final boolean endOfBatch) throws Exception {
                 System.out.println("Sequence: " + sequence);
                 System.out.println("ValueEvent: " + event.getValue());
+                ;;;
             }
         };
         // Build dependency graph
